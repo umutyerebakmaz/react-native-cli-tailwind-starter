@@ -1,0 +1,59 @@
+{
+    "root": true,
+    "overrides": [
+        {
+            "files": [
+                "*.js",
+                "*.jsx",
+                "*.ts",
+                "*.ts",
+                "*.tsx"
+            ],
+            "parserOptions": {
+                "project": [
+                    "./tsconfig.json"
+                ],
+                "ecmaVersion": "latest",
+                "parser": "@typescript-eslint"
+            },
+            "env": {
+                "es6": true
+            },
+            "extends": [
+                "eslint:recommended",
+                "plugin:prettier/recommended"
+            ],
+            "rules": {
+                // Default Rules
+                "no-empty-function": "off",
+                "no-unused-vars": "off",
+                "no-redeclare": "off",
+                "sort-imports": "off",
+                "no-undef": "off",
+                "no-empty": "off",
+                "no-useless-escape": "off",
+                "no-prototype-builtins": "off",
+                "no-console": "off",
+                "no-useless-constructor": "off",
+                "no-eval": "off",
+                "no-use-before-define": "off",
+                // TypeScript Rules
+                "@typescript-eslint/ban-types": "off",
+                "@typescript-eslint/no-unused-vars": "off",
+                "@typescript-eslint/no-use-before-define": "off",
+                "@typescript-eslint/no-namespace": "off",
+                "@typescript-eslint/no-empty-interface": "off",
+                "@typescript-eslint/no-empty-function": "off",
+                "@typescript-eslint/no-var-requires": "off",
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/no-non-null-assertion": "off",
+                "@typescript-eslint/explicit-function-return-type": "off",
+                "@typescript-eslint/explicit-module-boundary-types": "off",
+                "@typescript-eslint/ban-ts-ignore": "off",
+                "@typescript-eslint/return-await": "off",
+                "@typescript-eslint/naming-convention": "off",
+                "@typescript-eslint/no-floating-promises": "off"
+            }
+        }
+    ]
+}
